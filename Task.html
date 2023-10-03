@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0; box-sizing: border-box;}
+		header{
+			width:100%;
+			height: 100vh;
+			background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('techno2.jpg');
+			background-size: cover;
+			font-family: sans-serif;
+		}
+		nav{
+			width:100%;
+			height:100px;
+			color: white;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.logo{
+			font-size: 2em;
+			letter-spacing: 2px;
+			background-color: indigo;
+		}
+		.menu a{
+			text-decoration: none;
+			color: white;
+			padding:  20px;
+			font-size: 20px;
+			position: relative;
+}
+
+
+		.register a {
+			text-decoration: none;
+			color: white;
+			padding: 10px 20px;
+			font-size: 20px;
+			background-color:indianred;
+			border-radius: 8px;
+			transition: 0.4s;
+		}
+		.register a:hover{
+			background: transparent;
+			border: 1px solid indianred;
+		}
+		.menu a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width:0%;
+			height: 100%;
+			border-bottom: 2px solid indianred;
+			transition: 0.4s linear;
+
+
+		}
+		.menu a:hover:before{
+			width: 90%;
+
+		}
+		.middle{
+			max-width:650px ;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			color: ghostwhite;
+		}
+		.middle span{
+			font-size: 1.5em;
+		}
+		.middle a {
+			font-size: 1em;
+
+		}
+		.middle a {
+			text-decoration: none;
+			background: blue;
+			color: white;
+			padding: 10px 20px;
+			letter-spacing: 5px;
+		}
+		
+</style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo" ;width=100%>
+				 <b>Tech-Learning</b>
+
+			</div>
+			<div class="menu">
+				<a href="#">HOME</a>
+				<a href="#">CAREERS</a>
+				<a href="#">ABOUT US</a>
+				<a href="#">CONTACT US</a>
+
+			</div>
+			<div class="register">
+				<a href="#">LOGIN/SIGNUP</a>
+
+		</nav>
+		<section class="middle">
+			<span><h1>LEARN NOW EVERYWHERE IN THE WORLD</h1></span>
+			<p>We are providing world class teaching for the aspirants who wants to settle in their professional growth</p>
+			<br>
+			<a href="#"><u>Explore our courses</u></a> 
+		</section>
+		
+	</header>
+
+</body>
+</html>
